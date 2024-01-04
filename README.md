@@ -1,8 +1,6 @@
 # Academic office hours application
 
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/c84260e5-0dba-4ed8-a64a-12cbd7fdbb6b)
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/92fae979-b2d8-4108-870a-182c0432a42f)
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/7fec7320-d62b-4f5e-9ef1-d9ff69fffe51)
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/0ff981a3-2a57-46c2-8cc0-07e2254a6176)
 
 
 
