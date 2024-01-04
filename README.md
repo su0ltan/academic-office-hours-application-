@@ -1,4 +1,8 @@
 # Academic office hours application
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/f7a46258-8ee8-4faf-911c-ce64cd2cf96e)
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/c64da039-82cd-4402-9c89-04ceeddc291f)
+
+
 This project focuses on enhancing student-instructor communication through an efficient office hours management system; The project streamlines appointment requests, contributing to a more effective and organized academic environment.
 This project boasts extensive features catering to both students and instructors. Students can seamlessly engage with login/registration, course management (adding and removing), appointment reservations, and status checks. Instructors enjoy functionalities like adding course sections, managing appointment requests, and accessing key information on appointment status and upcoming appointments. The user-friendly interactive design ensures a hassle-free experience for all users.
 
