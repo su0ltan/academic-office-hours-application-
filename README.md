@@ -1,4 +1,4 @@
-# academic office hours application
+# Academic office hours application
 This project focuses on enhancing student-instructor communication through an efficient office hours management system; The project streamlines appointment requests, contributing to a more effective and organized academic environment.
 This project boasts extensive features catering to both students and instructors. Students can seamlessly engage with login/registration, course management (adding and removing), appointment reservations, and status checks. Instructors enjoy functionalities like adding course sections, managing appointment requests, and accessing key information on appointment status and upcoming appointments. The user-friendly interactive design ensures a hassle-free experience for all users.
 
