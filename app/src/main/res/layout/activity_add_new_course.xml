@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher.add_new_section_for_teacher">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbar2"
+
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:background="@color/md_blue_700"
+               android:minHeight="?attr/actionBarSize"
+               android:theme="?attr/actionBarTheme">
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="162dp"
+                   android:layout_height="49dp"
+                   android:layout_margin="40dp"
+                   android:text="@string/addSection"
+                   android:textColor="@color/colortext"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+
+                   />
+
+
+           </androidx.appcompat.widget.Toolbar>
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:id="@+id/spnAddCoursesearchable"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:hint="@string/chooseCourse"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+
+            <TextView
+                android:id="@+id/txtcourseCoode"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/secion"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txtcourseCoode"
+                android:id="@+id/edttxtCourseSecion"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+
+            <TextView
+                android:id="@+id/txtcourseename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/CourseName"
+                android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txtcourseename"
+            android:id="@+id/edttxtCourseName"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+
+            <TextView
+                android:id="@+id/txtcourseSecionn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/courseCode"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txtcourseSecionn"
+                android:id="@+id/edttxtCourseCode"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="@string/techerName"
+                android:id="@+id/tetid"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="TeacherUID"
+                android:layout_toEndOf="@id/tetid"
+                android:id="@+id/txtTeacherUID_addCourses"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="5dp"
+                android:id="@+id/crdAddNewCourse"
+                app:cardBackgroundColor="@color/md_blue_700">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colortext"
+                    android:layout_gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

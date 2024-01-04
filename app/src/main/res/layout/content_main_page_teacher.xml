@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/app_bar_main_page_teacher">
+    ><androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalCenterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_card"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+
+        app:cardBackgroundColor="@color/md_moves_50"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="50dp"
+            android:text="Sultan Al-enzy"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="85dp"
+            android:text="4381905559"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            app:srcCompat="@drawable/user" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="233dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/md_red_A400"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_card"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@+id/profile_card">
+
+        <TextView
+            android:id="@+id/txtMyrecent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerInside"
+            android:text="My Office Hours"
+            android:textColor="#e6e6ff"
+            android:textSize="25sp"
+            android:textStyle="" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="154dp"
+        android:layout_height="160dp"
+        android:clickable="true"
+        android:onClick="openRecentRequstsAct"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        app:cardBackgroundColor="@color/md_orange_500"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/verticalCenterGuideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_card"
+        app:layout_constraintTop_toBottomOf="@+id/profile_card"><![CDATA[
+
+
+        ]]>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="90dp"
+            android:scaleType="centerInside"
+            android:text="received request"
+            android:textColor="#e6e6ff"
+            android:textSize="19sp"
+            android:textStyle="" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="59dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/book2" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="399dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/md_orange_100"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+
+        <TextView
+            android:id="@+id/txtmyappointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="9dp"
+            android:scaleType="centerInside"
+            android:text="My next appointment:"
+            android:textColor="#002038"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        <ImageView
+            android:id="@+id/myInfopic"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/recentrequest" />
+        <TextView
+            android:id="@+id/txtmydayTecher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerInside"
+            android:text="There's No appointment!"
+            android:textColor="#b30000"
+            android:textSize="25dp"
+            android:textStyle="" />
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="233dp"
+        android:layout_height="67dp"
+        android:clickable="true"
+        android:onClick="openAllRequstsAct"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@color/md_yellow_900"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+
+        <TextView
+            android:id="@+id/txtcalnder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside"
+            android:text="recent requests"
+            android:textColor="#e6e6ff"
+            android:textSize="25sp"
+            android:textStyle="" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

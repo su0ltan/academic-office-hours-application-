@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".student.MainPage"
+    android:background="#f2f2f2"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.PopupOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:titleTextColor="#FFF"
+                    app:title="@string/welcome1"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/md_blue_700"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/md_blue_400">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/user" />
+
+            <TextView
+                android:id="@+id/txtStdid"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="87dp"
+                android:layout_toEndOf="@+id/imgProfile"
+                android:text="555555555"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_toEndOf="@+id/imgProfile"
+                android:text="Sultan alamzi"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crdsendrequest"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:clickable="true"
+                android:onClick="openSendAct"
+                app:cardBackgroundColor="@color/md_orange_600"
+                app:cardCornerRadius="5dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/sendRequest"
+                    android:textColor="@color/colortext"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="59dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/book2" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cardcourses"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_margin="3dp"
+                android:layout_toEndOf="@+id/crdsendrequest"
+                android:clickable="true"
+                android:onClick="openCoursesAct"
+                app:cardBackgroundColor="@color/md_red_A400"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/course" />
+
+                <TextView
+                    android:id="@+id/txtMyrecent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/courses"
+                    android:textColor="@color/colortext"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCalnder"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_below="@+id/Cardcourses"
+                android:layout_margin="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/crdsendrequest"
+                android:clickable="true"
+                android:onClick="opencalnder"
+                app:cardBackgroundColor="@color/md_green_600"
+                app:cardCornerRadius="5dp">
+
+
+                <TextView
+                    android:id="@+id/txtcalnder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerInside"
+                    android:text="@string/calender"
+                    android:textColor="@color/colortext"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imagec"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:src="@drawable/calendar" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:clickable="true"
+
+                android:layout_margin="2.5dp"
+                android:onClick="openStudentInfo"
+                app:cardBackgroundColor="#00b3b3"
+                app:cardCornerRadius="5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+
+                        android:textAlignment="center"
+                        android:text="@string/info"
+                        android:textColor="@color/colortext"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentInfo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:clickable="true"
+
+                android:layout_margin="2.5dp"
+                android:onClick="openRecentReqsAct"
+                app:cardBackgroundColor="@color/md_blue_700"
+                app:cardCornerRadius="5dp"
+                android:layout_toEndOf="@+id/cardView5">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgmanageinfo"
+                        android:layout_marginEnd="5dp"
+
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/txtrequests"
+                        android:src="@drawable/recent"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtrequests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+
+                        android:text="@string/recentReqs"
+                        android:textColor="@color/colortext"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:cardBackgroundColor="@color/md_orange_100"
+                app:cardCornerRadius="5dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/txtmyappointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="9dp"
+                    android:scaleType="centerInside"
+                    android:text="@string/nextAppointment"
+                    android:textColor="#b3b3b3"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/myInfopic"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="9dp"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/txtmydayTecher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="centerInside"
+                    android:text="@string/noAppointment"
+                    android:textColor="@color/md_red_500"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </RelativeLayout>
+
+
+                <Space
+                    android:background="@color/md_orange_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

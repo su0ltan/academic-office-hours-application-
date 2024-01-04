@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.sign_up"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/md_blue_700"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="162dp"
+                    android:layout_height="49dp"
+                    android:layout_margin="50dp"
+                    android:text="@string/signUp"
+                    android:textColor="@color/colortext"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/txtareyou"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/areYou"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:id="@+id/signUpSpinner"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/txtareyou" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp">
+
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/signUpFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstName"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:layout_margin="15dp"
+                android:id="@+id/signUplastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lastName"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layoutDirection="ltr">
+
+            <EditText
+                android:id="@+id/signUpemail"
+                android:layout_width="150dp"
+
+
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/signUpmailType"
+                android:layout_height="wrap_content"
+                android:text="At-KSU.EDU.SA"
+                android:layout_toEndOf="@id/signUpemail"
+                android:layout_marginTop="15dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/signUppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginRight="20dp"
+                android:hint="@string/password1"
+                android:inputType="textPassword"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:id="@+id/SignupCard"
+                app:cardBackgroundColor="@color/md_blue_700"
+                app:cardCornerRadius="6dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sing"
+                    android:textSize="15sp"
+                    android:textColor="@color/colortext"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

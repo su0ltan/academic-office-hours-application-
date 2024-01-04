@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.DavidBarbaran:FCM-AndroidToOtherDevice:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e8655c37eb1319801c8fd089131638/jetified-FCM-AndroidToOtherDevice-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e8655c37eb1319801c8fd089131638/jetified-FCM-AndroidToOtherDevice-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e8655c37eb1319801c8fd089131638/jetified-FCM-AndroidToOtherDevice-1.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.DavidBarbaran/FCM-AndroidToOtherDevice/1.1.1/d145583e1ddbe765417006a8d8fc83ee80ec9ec5/FCM-AndroidToOtherDevice-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#e6e6e6"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="10dp"
+    android:layoutDirection="rtl"
+   >
+
+    <TextView
+        android:fontFamily="@font/brandon_medium"
+        android:id="@+id/txtstudntid"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/studentid"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:fontFamily="@font/brandon_medium"
+            android:id="@+id/txtdate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/date"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txttime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/brandon_medium"
+            android:layout_marginStart="20dp"
+            android:text="الوقت: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:id="@+id/buttonaccpet"
+            app:cardBackgroundColor="@color/md_green_400"
+            app:cardCornerRadius="6dp"
+            >
+            <TextView
+                android:fontFamily="@font/brandon_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonreject"
+            android:layout_toEndOf="@+id/buttonaccpet"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            app:cardBackgroundColor="#ff3300"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="6dp"
+
+            >
+            <TextView
+
+                android:fontFamily="@font/brandon_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reject"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/buttonreview"
+            android:layout_toEndOf="@+id/buttonreject"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:layout_width="80dp"
+            app:cardCornerRadius="6dp"
+            android:layout_height="30dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+            <TextView
+                android:fontFamily="@font/brandon_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colortext"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

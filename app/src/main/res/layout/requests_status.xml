@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FFF"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+
+
+            android:layout_marginStart="3dp">
+
+            <TextView
+                android:id="@+id/requestcousename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="150"
+                android:text="اسم المقرر"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/requestdate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+
+
+                    android:text="10/10/2019"
+                    android:textSize="20sp"
+                    />
+            </RelativeLayout>
+
+
+
+            <Button
+                android:layout_width="40dp"
+                android:id="@+id/btnReview1"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:textSize="20sp"
+                android:text="..."
+                android:background="@drawable/mybutton"
+                android:textColor="@color/colortext"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

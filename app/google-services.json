@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "869104619724",
+    "firebase_url": "https://officehoursksu.firebaseio.com",
+    "project_id": "officehoursksu",
+    "storage_bucket": "officehoursksu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869104619724:android:31283e8a16a4de9e8e3269",
+        "android_client_info": {
+          "package_name": "com.sultan.lasttest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869104619724-q5ptf76svj3m48m2hn1jfi52s8dor7gc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sultan.lasttest",
+            "certificate_hash": "6959b10b220480a37a377fe53ba2d054de084269"
+          }
+        },
+        {
+          "client_id": "869104619724-nerr24e8kqgk7j89d0v9d4p5qftdj2pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAImamfJ52KA49SyhMiLpqCypmEH8sjk-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869104619724-nerr24e8kqgk7j89d0v9d4p5qftdj2pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
