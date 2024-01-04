@@ -7,6 +7,7 @@ An interactive system for efficient office hours management, fostering communica
 - [Overview](#Overview)
 - [Introduction](#Introduction)
 - [Features](#features)
+- [Project Structure](#A)
 - [Installation](#installation)
 
 
@@ -47,6 +48,9 @@ An interactive system for efficient office hours management, fostering communica
   - View the previous requests
 
 
+## Project Structure
+- `src/`: Contains the source code for the Encryption tool.
+- `doc/`: Documentation files for the project.
 
 ## Installation
 
