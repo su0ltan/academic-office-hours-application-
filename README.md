@@ -1,8 +1,11 @@
 # Academic office hours application
 
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/806fa47a-3f7f-4dad-8b78-1f2387355c4e)
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/71b9d3ae-b504-4aab-9afd-886d860aa7c8)
-![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/f198c723-1343-4367-b100-d7760283190f)
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/c84260e5-0dba-4ed8-a64a-12cbd7fdbb6b)
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/92fae979-b2d8-4108-870a-182c0432a42f)
+![image](https://github.com/su0ltan/academic-office-hours-application-/assets/53498277/7fec7320-d62b-4f5e-9ef1-d9ff69fffe51)
+
+
+
 
 
 This project focuses on enhancing student-instructor communication through an efficient office hours management system; The project streamlines appointment requests, contributing to a more effective and organized academic environment.
