@@ -49,7 +49,7 @@ An interactive system for efficient office hours management, fostering communica
 
 
 ## Project Structure
-- `src/`: Contains the source code for the Encryption tool.
+- `app/src/`: Contains the source code for the Encryption tool.
 - `doc/`: Documentation files for the project.
 
 ## Installation
